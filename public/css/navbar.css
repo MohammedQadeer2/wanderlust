@@ -1,0 +1,89 @@
+/* NAVBAR BASE */
+.navbar {
+    padding: 0.6rem 1rem;
+}
+
+/* BRAND */
+.navbar-brand {
+    font-size: 1.25rem;
+}
+
+/* SEARCH FORM */
+.search-form {
+    width: 15rem;
+    max-width: 330px;
+    margin-right: 2rem;
+}
+
+.search-form > .search-box {
+    border-radius: 4rem;
+    padding: 0.5rem 2rem;
+    width: 12rem;
+    border: 1px solid #ddd;
+}
+
+.search-form > .search-btn {
+    background-color: #ff5a5f;
+    border-radius: 1rem;
+    height: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-btn:hover {
+    background-color: #ff3a3f;
+}
+
+/* NAV LINKS */
+.nav-link {
+    font-size: 0.95rem;
+    padding: 0.6rem 0.9rem;
+}
+
+/* TOGGLER BUTTON MOBILE */
+.navbar-toggler {
+    border: none;
+    padding: 0.4rem 0.6rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* --- MOBILE RESPONSIVE STYLING --- */
+@media (max-width: 768px) {
+
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    .search-form {
+        width: 100%;
+        margin-top: 0.7rem;
+        margin-bottom: 0.7rem;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .search-box {
+        border-radius: 4rem;
+        padding: 1rem 2rem;
+        border: 1px solid #ddd;
+        margin-left: 2rem;
+    }
+    .search-input {
+        font-size: 0.9rem;
+    }
+
+    .nav-link {
+        text-align: center;
+        margin-right: 2.5rem;
+        padding: 0.7rem;
+    }
+
+    .navbar-nav {
+        margin-top: 0.6rem;
+    }
+}

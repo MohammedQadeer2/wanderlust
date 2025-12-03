@@ -1,0 +1,208 @@
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+
+    /* Remove offsets on all columns */
+    .show-body .col-8,
+    .show-body .col-6,
+    .show-body .col-8.offset-3,
+    .show-body .col-6.offset-3 {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* Center the entire body content */
+    .show-body {
+        padding: 2rem !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* text-align: center; */
+    }
+
+    /* Ensure card takes full width */
+    .show-card {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100% !important;
+        max-width: 350px; /* keeps it neat */
+        margin: auto;
+    }
+
+    /* Make image responsive */
+    .show-img {
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 10px;
+    }
+
+    /* Center the title */
+    .showTitle {
+        text-align: center !important;
+        width: 100%;
+    }
+
+    .card-body {
+        padding: 0.5rem !important;
+        text-align: center !important;
+    }
+
+    /* Title spacing */
+    .showTitle {
+        margin-bottom: 1rem !important;
+    }
+
+    /* Owner text styling */
+    .owner-text {
+        font-style: italic;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: block;
+    }
+
+    /* Price styling */
+    .price-text {
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
+
+    /* Location styling */
+    .location-text {
+        margin: 0.5rem 0;
+    }
+
+    /* Country */
+    .country-text {
+        margin-top: 0.3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    
+    /* Map wrapper should take full width */
+    .map-div {
+        width: 100% !important;
+        height: auto !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /*(map) iframe, map script container, or canvas responsive fix*/
+    .map-div > * {
+        width: 100% !important;
+    }
+}
+
+
+.show-img {
+    height: 40vh;
+}
+
+.showTitle {
+    margin-right: 0.5rem !important;
+}
+
+.show-btns {
+    margin-left: 0.1rem !important;
+}
+
+
+.edit-btns {
+    background-color: #fe424d !important;
+}
+
+.show-card {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* error alerts */
+
+.alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* REVIEW */
+
+.reviewCards {
+    border: 1px solid black;
+    padding: 1rem !important;
+}
+
+.revCard {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+/* MAP */
+
+#map {
+    height: 400px;
+    width: 80vh;
+    border: 2px solid black;
+}
+
+.listing-info {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.title-text {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.owner-text {
+    font-style: italic;
+    font-size: 0.95rem;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.owner-text span {
+    font-weight: 600;
+}
+
+.description-text {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 0 1.2rem 0;
+}
+
+.price-text {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 1.2rem;
+}
+
+.location-text {
+    font-size: 1rem;
+    margin: 0.2rem 0;
+}
+
+.country-text {
+    font-size: 1rem;
+    margin: 0.2rem 0;
+}
+
+
+/* -------- Mobile Responsiveness -------- */
+
+@media (max-width: 768px) {
+    .listing-title {
+        font-size: 1.4rem;
+    }
+    .price {
+        font-size: 1.2rem;
+    }
+    .description {
+        font-size: 0.95rem;
+    }
+}
