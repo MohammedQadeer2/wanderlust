@@ -53,7 +53,7 @@ store.on("error", (err) => {
 //sesion Code
 const sessionOption = {
     store,
-    secret: "mysupersecretcode",
+    secret: process.env.SECRET,
     resave: false,
     saveUninitialized: true,
     cookie: {
