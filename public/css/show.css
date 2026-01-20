@@ -27,7 +27,7 @@
         padding-left: 0 !important;
         padding-right: 0 !important;
         width: 100% !important;
-        max-width: 350px; /* keeps it neat */
+        max-width: 350px; /*keeps it neat*/
         margin: auto;
     }
 
@@ -41,17 +41,13 @@
     /* Center the title */
     .showTitle {
         text-align: center !important;
+        margin-bottom: 1rem !important;
         width: 100%;
     }
 
     .card-body {
         padding: 0.5rem !important;
         text-align: center !important;
-    }
-
-    /* Title spacing */
-    .showTitle {
-        margin-bottom: 1rem !important;
     }
 
     /* Owner text styling */
@@ -74,6 +70,21 @@
         margin: 0.5rem 0;
     }
 
+    .listing-info {
+        text-align: none;
+    }
+
+    .listing-info > .title-text {
+        font-size: 1rem;
+        margin-right: 4rem;
+        margin-top: 1rem;
+    }
+    .price {
+        font-size: 1.2rem;
+    }
+    .description {
+        font-size: 0.95rem;
+    }
     /* Country */
     .country-text {
         margin-top: 0.3rem;
@@ -98,10 +109,6 @@
 
 .show-img {
     height: 40vh;
-}
-
-.showTitle {
-    margin-right: 0.5rem !important;
 }
 
 .show-btns {
@@ -148,15 +155,20 @@
 
 .listing-info {
     text-align: center;
-    padding: 1.5rem 1rem;
     margin-bottom: 1.5rem;
+    margin-top: none;
 }
 
-.title-text {
-    font-size: 1.6rem;
+.listing-info > .title-text {
+    font-size: 1rem;
+    color: #fe424d;
+    margin-right: 9rem;
     font-weight: 700;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    /* margin-top: 1rem; */
+}
+
+.listing-info > .title-tag {
+    display: inline-block;
 }
 
 .owner-text {
@@ -190,19 +202,4 @@
 .country-text {
     font-size: 1rem;
     margin: 0.2rem 0;
-}
-
-
-/* -------- Mobile Responsiveness -------- */
-
-@media (max-width: 768px) {
-    .listing-title {
-        font-size: 1.4rem;
-    }
-    .price {
-        font-size: 1.2rem;
-    }
-    .description {
-        font-size: 0.95rem;
-    }
 }

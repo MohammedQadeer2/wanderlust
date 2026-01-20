@@ -4,20 +4,20 @@
     const listing = <%- JSON.stringify(listing) %>;
 </script>
 <div class="show-body row mt-3 mb-4">
-    <div class="col-8 offset-3">
+    <div class="showTitle-div col-8 offset-3">
         <h3 class="showTitle"> <b><%= listing.title %>:</b></h3>
     </div>
 <div class="card col-6 offset-3 show-card listing-cards">
   <img src="<%= listing.image.url %>" class="card-img-top show-img" alt="listings_image">
   <div class="card-body">
-    <p class="listing-info card-text">
+    <div class="listing-info card-text">
         <p class="title-text"><b><%= listing.title %></b></p><br>
-        <p class="owner-text"><i><b> Owned By  <u>"<%= listing.owner.username %>" </u></b></i></p>
+        <p class="owner-text"><i>Owned By<b><u>"<%= listing.owner.username %>" </u></b></i></p>
         <p class="description-text"><%= listing.description %></p>
         <p class="price-text"><b>&#8377; <%= listing.price.toLocaleString("en-IN") %>/night </b></p>
         <p class="location-text"><%= listing.location %></p>
         <p class="country-text"><%= listing.country %></p>
-    </p>
+    </div>
     <!--  -->
     <div class=" row  d-flex flex-column flex-sm-row gap-2 mt-3">
         <% if(currUser && listing.owner._id.equals(currUser._id)) { %>
