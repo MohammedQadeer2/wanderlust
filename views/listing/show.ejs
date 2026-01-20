@@ -70,7 +70,7 @@
             <div class="col-6">
                 <div  class="card-body mt-3 mb-3 reviewCards"> 
                     <h5 class="card-title">@<%= review.author.username %> : </h5>
-                    <p class="starability-result card-text" data-rating=<%=review.rating%>></p>
+                    <p class="starability-result review-star" data-rating=<%=review.rating%>></p>
                     <p class="card-text"><%=review.comment%></p>
                     <form method="POST" action="/listings/<%=listing._id%>/reviews/<%=review._id%>?_method=DELETE">
                         <button class="btn btn-primary"> Delete </button>

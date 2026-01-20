@@ -125,6 +125,15 @@
     padding-right: 0 !important;
 }
 
+.reviewCards > .card-text {
+    font-size: larger;
+}
+
+.reviewCards > .review-star {
+    height: 2px;
+    width: 8px;
+}
+
 /* error alerts */
 
 .alert {
@@ -154,9 +163,11 @@
 }
 
 .listing-info {
-    text-align: center;
     margin-bottom: 1.5rem;
     margin-top: none;
+    display: grid;
+    gap: 0.4rem;
+    flex-direction: column;
 }
 
 .listing-info > .title-text {
